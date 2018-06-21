@@ -1,3 +1,5 @@
+# https://practice.geeksforgeeks.org/problems/kth-smallest-element/0
+# level: medium
 import heapq
 
 for t in range(int(input())):
