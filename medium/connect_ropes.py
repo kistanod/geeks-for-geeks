@@ -2,9 +2,9 @@
 # level: medium
 
 
-def connect_ropes(lengths):
+def connect_ropes(lengths, temp):
     # pass the temp(no need to sort)
-    temp = []
+    temp = temp
 
     if len(lengths) == 1:
         # sum of temp, not lengths
@@ -29,4 +29,5 @@ def connect_ropes(lengths):
 for t in range(int(input())):
     length = input()
     ropes = list(sorted(list(map(int, input().split()))))
-    print(connect_ropes(ropes))
+    temp = []
+    print(connect_ropes(ropes, temp))
